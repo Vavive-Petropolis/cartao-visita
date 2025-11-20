@@ -48,7 +48,7 @@
     .contact-item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       background: white;
       padding: 18px;
       border-radius: 12px;
@@ -56,6 +56,7 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.06);
       cursor: pointer;
       transition: transform .1s;
+	  width: 300px;
     }
     .contact-item:hover {
       transform: scale(1.02);
@@ -83,6 +84,33 @@
       text-align: center;
       cursor: pointer;
     }
+	.force_left {
+		margin-left: -50px;
+	}
+	.photo{
+	  width: 90px;
+      height: 90px;
+      border-radius: 10px;
+	}
+	.div-center {
+      display: inline-block;
+    }
+	.contact-item-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: fixed;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 12px;
+      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      transition: transform .1s;
+	  width: 300px;
+    }
+	.bold {
+	  font-weight: bold;
+	}
   </style>
 </head>
 <body>
@@ -97,38 +125,53 @@
   
   
   
-    <p>A VAVIVÉ chegou em Petrópolis!</p>
+    <p>A <span class="bold">Vavivê</span> chegou em <span class="bold">Petrópolis!</span></p>
     <p>Mais do que limpeza, oferecemos tempo e tranquilidade para você!</p>
     <p>Desde 2020, já realizamos mais de 150 mil atendimentos em todo o Brasil, levando praticidade, qualidade e confiança para milhares de famílias e empresas.</p>
     <p>Agora é a vez de Petrópolis receber essa experiência que une tecnologia, humanização e eficiência.</p>
 
     
 
-    <h3 style="margin-top: 30px;">Encontre-me no</h3>
+    <h3 style="margin-top: 30px;">Encontre-me:</h3>
+	
+	<div class="div-center">
+		<a href="https://wa.me/552420410014" target="_blank" style="text-decoration:none; color:inherit;">
+			<div class="contact-item">
+			  <div class="contact-left">
+				<img class="icon" src="icon22.svg" />
+				<div>
+				  <strong>WhatsApp</strong>
+				</div>
+			  </div>
+			</div>
+		</a>	
 
-    <div class="contact-item">
-      <div class="contact-left">
-        <img class="icon" src="icon22.svg" />
-        <div>
-          <strong>WhatsApp</strong>
-        </div>
-      </div>
-    </div>
+		<a href="https://instagram.com/vavive.rj.petropolis" target="_blank" style="text-decoration:none; color:inherit;">
+			<div class="contact-item">
+			  <div class="contact-left">
+				<img class="icon" src="icon20.svg" />
+				<div>
+				  <strong>Instagram</strong>
+				</div>
+			  </div>
+			</div>
+		</a>	
+		
+		<a href="mailto:petropolis@vavive.com.br" target="_blank" style="text-decoration:none; color:inherit;">
+			<div class="contact-item-photo">
+			  <div class="contact-left">
+				<img class="photo" src="foto.jpg" />
+				<div>
+				  <div><strong>Arianne Carreira</strong></div>
+					Sócia Diretora Comercial
+				</div>
+			  </div>
+			</div>
+		</a>
+	</div>
 
-    <div class="contact-item">
-      <div class="contact-left">
-        <img class="icon" src="icon20.svg" />
-        <div>
-          <strong>Instagram</strong>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-	<img class="icon" src="foto.jpg" />
-      <strong>Arianne Carreira</strong><br />
-      Sócia Diretora Comercial
-    </div>
+    
+    
   </div>
 </body>
 </html>
